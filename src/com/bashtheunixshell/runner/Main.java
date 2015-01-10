@@ -8,13 +8,13 @@ import org.jsfml.window.Mouse.Button;
 import org.jsfml.window.VideoMode;
 import org.jsfml.window.event.Event;
 
-/*    TODO LIST:
- *    FIX STATE MACHINE
+/*  TODO LIST:
+ * >>>FIX STATE MACHINE<<<
  * 0. Fix the select box issue
- * 1. Change the lost boolean and stuff.  Basically just make it so that when you go back to the main screen, you can start a new game again
+ * 1. Change the lost boolean and stuff.
+ *    Basically just make it so that when you go back to the main screen, you can start a new game again
  * 2. Add a "Try again" button when you lose
  * 3. Make the points system work
- * 4. Make the "Back" button in the credits screen work
  */
 
 public class Main {
