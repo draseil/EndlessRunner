@@ -1,0 +1,6 @@
+#/bin/bash
+
+CLASSPATH=bin/:lib/jsfml.jar
+PACKAGE=com.bashtheunixshell.runner
+
+java -cp $CLASSPATH $PACKAGE.Main

@@ -1,0 +1,8 @@
+#/bin/bash
+
+SRC=src
+LIB=lib
+BIN=bin
+PACKAGE=com/bashtheunixshell/runner
+
+javac -cp $LIB/jsfml.jar:$BIN/*.class -d $BIN/ $SRC/$PACKAGE/*.java

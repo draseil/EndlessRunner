@@ -1,0 +1,301 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"credits",
+				"creditsExitBox"
+			],
+			[
+				"sc",
+				"score2"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/theemptyabyss/Documents/dev/Programming/Standard/Java/aura/src/com/noodles/aura/main/SelectBox.java",
+		"/home/theemptyabyss/Documents/dev/Programming/Standard/Java/aura/src/com/noodles/aura/main/Text.java",
+		"/home/theemptyabyss/Documents/dev/Programming/Standard/Java/aura/src/com/noodles/aura/main/BGMusic.java",
+		"/home/theemptyabyss/Documents/dev/Programming/Standard/Java/aura/src/com/noodles/aura/main/Player.java",
+		"/home/theemptyabyss/Documents/dev/Programming/Standard/Java/aura/src/com/noodles/aura/main/Block.java",
+		"/home/theemptyabyss/Documents/dev/Programming/Standard/Java/aura/src/com/noodles/aura/main/Main.java",
+		"/home/theemptyabyss/Documents/dev/Programming/Standard/Java/aura/src/com/noodles/aura/main/TitleState.java",
+		"/home/theemptyabyss/Documents/dev/Programming/Standard/Java/aura/src/com/noodles/aura/main/OverworldState.java",
+		"/home/theemptyabyss/Documents/dev/Programming/Standard/Java/aura/src/com/noodles/aura/main/GameState.java",
+		"/home/theemptyabyss/Documents/dev/Programming/Standard/Java/Runner/src/com/bashtheunixshell/runner/Main.java",
+		"/home/theemptyabyss/Documents/dev/Programming/Standard/Java/aura/src/com/noodles/aura/main/Background.java",
+		"/home/theemptyabyss/Documents/dev/Programming/Standard/Java/aura/src/com/noodles/aura/main/Collideable.java",
+		"/home/theemptyabyss/Documents/dev/Programming/Standard/Java/SFMLtest/src/sfmltest/SFMLtest.java",
+		"/home/theemptyabyss/Documents/dev/Programming/Standard/Java/SFMLtest/src/com/bashtheunixshell/sfmltest/Main.java",
+		"/home/theemptyabyss/Documents/dev/Programming/Standard/Java/SFMLtest/src/sfmltest/Main.java",
+		"/home/theemptyabyss/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/theemptyabyss/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap",
+		"/home/theemptyabyss/.config/sublime-text-3/Packages/User/Distraction Free.sublime-settings",
+		"/home/theemptyabyss/.config/sublime-text-3/Packages/Theme - Spacegray/base16-eighties.dark.tmTheme",
+		"/home/theemptyabyss/.config/sublime-text-3/Packages/Theme - Spacegray/base16-mocha.dark.tmTheme",
+		"/home/theemptyabyss/.config/sublime-text-3/Packages/Theme - Spacegray/base16-ocean.dark.tmTheme",
+		"/home/theemptyabyss/.config/sublime-text-3/Packages/Theme - Spacegray/base16-ocean.light.tmTheme",
+		"/home/theemptyabyss/.i3/config",
+		"/home/theemptyabyss/Documents/dev/Programming/Standard/Java/aura/battlemechanics.odt",
+		"/home/theemptyabyss/Documents/dev/Programming/Standard/Java/aura/compile",
+		"/home/theemptyabyss/Documents/dev/Programming/Standard/Java/aura/contributors.txt",
+		"/home/theemptyabyss/Documents/dev/Programming/Standard/Java/aura/.gitignore",
+		"/home/theemptyabyss/Documents/dev/Programming/Standard/Java/aura/README.md",
+		"/home/theemptyabyss/Documents/dev/Programming/Standard/Java/aura/run",
+		"/home/theemptyabyss/Documents/dev/Programming/Standard/Java/aura/Story idea - Aura.docx",
+		"/home/theemptyabyss/Documents/dev/Programming/Standard/Java/NotArt/compile",
+		"/home/theemptyabyss/Documents/dev/Programming/Standard/Java/NotArt/.gitignore",
+		"/home/theemptyabyss/Documents/dev/Programming/Standard/Java/NotArt/README.md",
+		"/home/theemptyabyss/Documents/dev/Programming/Standard/Java/NotArt/run",
+		"/home/theemptyabyss/Documents/dev/Programming/Standard/Go/browser/main",
+		"/home/theemptyabyss/Downloads/i3/src/xinerama.c",
+		"/home/theemptyabyss/Downloads/i3/src/xcursor.c",
+		"/home/theemptyabyss/Downloads/i3/src/xcb.c",
+		"/home/theemptyabyss/Downloads/i3/src/x.c",
+		"/home/theemptyabyss/Downloads/i3/src/workspace.c",
+		"/home/theemptyabyss/Downloads/i3/src/window.c",
+		"/home/theemptyabyss/Downloads/i3/src/util.c",
+		"/home/theemptyabyss/Downloads/i3/src/tree.c",
+		"/home/theemptyabyss/Downloads/i3/src/startup.c",
+		"/home/theemptyabyss/Downloads/i3/src/sighandler.c",
+		"/home/theemptyabyss/Downloads/i3/src/sd-daemon.c",
+		"/home/theemptyabyss/Downloads/i3/src/scratchpad.c",
+		"/home/theemptyabyss/Downloads/i3/src/restore_layout.c",
+		"/home/theemptyabyss/Downloads/i3/src/resize.c",
+		"/home/theemptyabyss/Downloads/i3/src/render.c",
+		"/home/theemptyabyss/Downloads/i3/src/regex.c",
+		"/home/theemptyabyss/Downloads/i3/src/randr.c",
+		"/home/theemptyabyss/Downloads/i3/src/output.c",
+		"/home/theemptyabyss/Downloads/i3/src/move.c",
+		"/home/theemptyabyss/Downloads/i3/src/match.c",
+		"/home/theemptyabyss/Downloads/i3/src/manage.c",
+		"/home/theemptyabyss/Downloads/i3/src/assignments.c",
+		"/home/theemptyabyss/Downloads/i3/src/bindings.c",
+		"/home/theemptyabyss/Downloads/i3/src/click.c",
+		"/home/theemptyabyss/Downloads/i3/src/commands.c",
+		"/home/theemptyabyss/Downloads/i3/src/commands_parser.c",
+		"/home/theemptyabyss/Downloads/i3/src/con.c",
+		"/home/theemptyabyss/Downloads/i3/src/config.c",
+		"/home/theemptyabyss/Downloads/i3/src/config_directives.c",
+		"/home/theemptyabyss/Downloads/i3/src/config_parser.c",
+		"/home/theemptyabyss/Downloads/i3/src/debug.c",
+		"/home/theemptyabyss/Downloads/i3/src/display_version.c",
+		"/home/theemptyabyss/Downloads/i3/src/ewmh.c",
+		"/home/theemptyabyss/Downloads/i3/src/fake_outputs.c",
+		"/home/theemptyabyss/Downloads/i3/src/floating.c",
+		"/home/theemptyabyss/Downloads/i3/src/handlers.c",
+		"/home/theemptyabyss/Downloads/i3/src/i3.mk",
+		"/home/theemptyabyss/Downloads/i3/src/ipc.c",
+		"/home/theemptyabyss/Downloads/i3/src/key_press.c",
+		"/home/theemptyabyss/Downloads/i3/src/load_layout.c",
+		"/home/theemptyabyss/Downloads/i3/src/log.c",
+		"/home/theemptyabyss/Downloads/i3/src/main.c",
+		"/home/theemptyabyss/Downloads/i3/src/Makefile",
+		"/home/theemptyabyss/Downloads/i3/src/x.o",
+		"/home/theemptyabyss/Downloads/i3/src/xinerama.o",
+		"/home/theemptyabyss/Downloads/i3/src/xcursor.o",
+		"/home/theemptyabyss/Downloads/i3/src/xcb.o",
+		"/home/theemptyabyss/Downloads/i3/src/workspace.o",
+		"/home/theemptyabyss/Downloads/i3/src/window.o",
+		"/home/theemptyabyss/Downloads/i3/src/util.o",
+		"/home/theemptyabyss/Downloads/i3/src/tree.o",
+		"/home/theemptyabyss/Downloads/i3/src/startup.o",
+		"/home/theemptyabyss/Downloads/i3/src/sighandler.o",
+		"/home/theemptyabyss/Downloads/i3/src/sd-daemon.o",
+		"/home/theemptyabyss/Downloads/i3/src/scratchpad.o",
+		"/home/theemptyabyss/Downloads/i3/src/restore_layout.o",
+		"/home/theemptyabyss/Downloads/i3/src/resize.o",
+		"/home/theemptyabyss/Downloads/i3/src/render.o",
+		"/home/theemptyabyss/Downloads/i3/src/regex.o",
+		"/home/theemptyabyss/Downloads/i3/src/randr.o",
+		"/home/theemptyabyss/Downloads/i3/src/output.o",
+		"/home/theemptyabyss/Downloads/i3/src/move.o",
+		"/home/theemptyabyss/Downloads/i3/src/match.o",
+		"/home/theemptyabyss/Downloads/i3/src/manage.o",
+		"/home/theemptyabyss/Downloads/i3/src/main.o",
+		"/home/theemptyabyss/Downloads/i3/src/log.o",
+		"/home/theemptyabyss/Downloads/i3/src/load_layout.o",
+		"/home/theemptyabyss/Downloads/i3/src/key_press.o",
+		"/home/theemptyabyss/Downloads/i3/src/ipc.o",
+		"/home/theemptyabyss/Downloads/i3/src/handlers.o",
+		"/home/theemptyabyss/Downloads/i3/src/floating.o",
+		"/home/theemptyabyss/Downloads/i3/src/fake_outputs.o",
+		"/home/theemptyabyss/Downloads/i3/src/ewmh.o",
+		"/home/theemptyabyss/Downloads/i3/src/display_version.o",
+		"/home/theemptyabyss/Downloads/i3/src/debug.o",
+		"/home/theemptyabyss/Downloads/i3/src/con.o",
+		"/home/theemptyabyss/Downloads/i3/src/config_parser.o",
+		"/home/theemptyabyss/Downloads/i3/src/config.o",
+		"/home/theemptyabyss/Downloads/i3/src/config_directives.o",
+		"/home/theemptyabyss/Downloads/i3/src/commands_parser.o",
+		"/home/theemptyabyss/Downloads/i3/src/commands.o",
+		"/home/theemptyabyss/Downloads/i3/src/click.o",
+		"/home/theemptyabyss/Downloads/i3/src/bindings.o",
+		"/home/theemptyabyss/Downloads/i3/src/assignments.o",
+		"/home/theemptyabyss/Documents/dev/Programming/Standard/Go/helloworld/helloworld.go",
+		"/home/theemptyabyss/Documents/dev/Programming/Standard/Go/browser/main.go",
+		"/home/theemptyabyss/Documents/dev/Programming/Standard/Java/Runner/src/com/bashtheunixshell/runner/Player.java",
+		"/home/theemptyabyss/Documents/dev/Programming/Standard/Java/Runner/src/com/bashtheunixshell/runner/Dialog.java",
+		"/home/theemptyabyss/Documents/dev/Programming/Standard/Java/Runner/src/com/bashtheunixshell/runner/Block.java",
+		"/home/theemptyabyss/Documents/dev/Programming/Standard/Java/Runner/src/com/bashtheunixshell/runner/Background.java",
+		"/home/theemptyabyss/Documents/dev/Programming/Standard/Java/Runner/src/com/bashtheunixshell/runner/SelectBox.java",
+		"/home/theemptyabyss/Documents/dev/Programming/Standard/Java/Shimeji/Karkat/src/com/group_finity/mascot/environment/Environment.java",
+		"/home/theemptyabyss/Documents/dev/Programming/Standard/Java/Shimeji/Karkat/src/com/group_finity/mascot/win/WindowsEnvironment.java"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"\"alt\"",
+			"alt",
+			"theme",
+			"return",
+			"people",
+			"506075",
+			"Mod1"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"People",
+			"405065",
+			"$mod"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "Background.sublime-project",
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 208.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
