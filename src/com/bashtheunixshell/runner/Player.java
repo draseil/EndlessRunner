@@ -13,6 +13,8 @@ public class Player extends Sprite {
 
     private Texture texture;
     private int gravity;
+    private boolean hasJumped = false;
+    private int level = 1;
 
     public Player(int x, int y) {
         texture = new Texture();
@@ -31,9 +33,23 @@ public class Player extends Sprite {
     public void move(Ground ground) {
         gravity++;
         move(0, gravity);
-        if (Keyboard.isKeyPressed(Key.LCONTROL)) {
-            if (onTheGround(ground)) {
+        if (onTheGround(ground)) {
+            if (Keyboard.isKeyPressed(Key.LCONTROL)) {
                 gravity = -20;
+            }
+            setPosition(X1(), ground.Y1() - 32);
+        }
+
+        if (level == 2) {
+            if (Keyboard.isKeyPressed(Key.RIGHT)) {
+                move(4, 0);
+            }
+        } else if (level == 3) {
+            if (Keyboard.isKeyPressed(Key.RIGHT)) {
+                move(4, 0);
+            }
+            if (Keyboard.isKeyPressed(Key.LEFT)) {
+                move(-4, 0);
             }
         }
     }
@@ -46,8 +62,33 @@ public class Player extends Sprite {
         }
     }
 
+    public int addPoints(int points, Block block) {
+        if (X1() > block.X1() && X1() < block.X2()) {
+            if (!hasJumped) {
+                ++points;
+                hasJumped = true;
+            }
+        } else {
+            hasJumped = false;
+        }
+
+        return points;
+    }
+
+    public void changeLevel(int points) {
+        if (points == 10) {
+            level = 2;
+        } else if (points == 20) {
+            level = 3;
+        }
+    }
+
     public boolean onTheGround(Ground ground) {
         return (Y2() > ground.Y1());
+    }
+
+    public boolean isColliding(Block block) {
+        return (X1() < block.X2() && X2() > block.X1() && Y1() < block.Y2() && Y2() > block.Y1());
     }
 
     public void draw(RenderWindow window) {

@@ -11,7 +11,7 @@ public class Background extends Sprite {
 
     private Texture texture;
 
-    public Background(String filename) {
+    public Background(String filename, int x, int y) {
         texture = new Texture();
 
         try {
@@ -21,6 +21,7 @@ public class Background extends Sprite {
         }
 
         setTexture(texture);
+        setPosition(x, y);
     }
 
     public void animate(RenderWindow window, float speed, int windowWidth) {

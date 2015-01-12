@@ -10,7 +10,6 @@ import java.util.Random;
 
 public class Block extends Sprite {
 
-
     public Block(int x, int y) {
         Texture texture = new Texture();
 

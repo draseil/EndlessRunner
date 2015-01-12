@@ -28,7 +28,32 @@ public class Dialog extends Text {
         setPosition(x, y);
     }
 
+    public Dialog(String text, int x, int y, Color color) {
+        font = new Font();
+
+        try {
+            font.loadFromFile(Paths.get("res/pixelmix.ttf"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        setFont(font);
+        setCharacterSize(24);
+        setString(text);
+        setOrigin(getLocalBounds().width / 2, getLocalBounds().height / 2);
+        setPosition(x, y);
+        setColor(color);
+    }
+
     public void draw(RenderWindow window) {
         window.draw(this);
+    }
+
+    public int width() {
+        return (int) getGlobalBounds().width;
+    }
+
+    public int height() {
+        return (int) getGlobalBounds().height;
     }
 }

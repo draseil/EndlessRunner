@@ -13,6 +13,7 @@ import java.nio.file.Paths;
 public class SelectBox extends Sprite {
 
     private Texture texture;
+    private boolean keyIsPressed = false;;
 
     public SelectBox(Vector2f position) {
         texture = new Texture();
@@ -29,26 +30,46 @@ public class SelectBox extends Sprite {
     }
 
     public void move(Dialog text1, Dialog text2, Dialog text3) {
-        if (Keyboard.isKeyPressed(Key.DOWN)) {
-            if (getPosition() == text1.getPosition()) {
-                setPosition(text2.getPosition());
-            } else if (getPosition() == text2.getPosition()) {
-                setPosition(text3.getPosition());
+        if (Keyboard.isKeyPressed(Key.DOWN) || Keyboard.isKeyPressed(Key.UP) || Keyboard.isKeyPressed(Key.RETURN)) {
+            if (Keyboard.isKeyPressed(Key.DOWN)) {
+                if (getPosition() == text1.getPosition()) {
+                    if (!keyIsPressed) {
+                        setPosition(text2.getPosition());
+                        keyIsPressed = true;
+                    }
+                } else if (getPosition() == text2.getPosition()) {
+                    if (!keyIsPressed) {
+                        setPosition(text3.getPosition());
+                        keyIsPressed = true;
+                    }
+                }
             }
-        }
-        if (Keyboard.isKeyPressed(Key.UP)) {
-            if (getPosition() == text2.getPosition()) {
-                setPosition(text1.getPosition());
-            } else if (getPosition() == text3.getPosition()) {
-                setPosition(text2.getPosition());
+            if (Keyboard.isKeyPressed(Key.UP)) {
+                if (getPosition() == text2.getPosition()) {
+                    if (!keyIsPressed) {
+                        setPosition(text1.getPosition());
+                        keyIsPressed = true;
+                    }
+                } else if (getPosition() == text3.getPosition()) {
+                    if (!keyIsPressed) {
+                        setPosition(text2.getPosition());
+                        keyIsPressed = true;
+                    }
+                }
             }
-        }
-        if (Keyboard.isKeyPressed(Key.RETURN)) {
-            if (getPosition() == text1.getPosition()) {}
-            else if (getPosition() == text2.getPosition()) {} 
-            else if (getPosition() == text3.getPosition()) {
-                System.exit(0);
+            if (Keyboard.isKeyPressed(Key.RETURN)) {
+                if (getPosition() == text1.getPosition()) {
+                    Main.mainGame.startGame();
+                }
+                else if (getPosition() == text2.getPosition()) {
+                    Main.mainGame.showCredits();
+                }
+                else if (getPosition() == text3.getPosition()) {
+                    System.exit(0);
+                }
             }
+        } else {
+            keyIsPressed = false;
         }
     }
 
