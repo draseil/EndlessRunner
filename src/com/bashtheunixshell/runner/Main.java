@@ -1,13 +1,8 @@
 package com.bashtheunixshell.runner;
 
 import org.jsfml.graphics.RenderWindow;
-import org.jsfml.window.Keyboard;
-import org.jsfml.window.Keyboard.Key;
-import org.jsfml.window.Mouse;
-import org.jsfml.window.Mouse.Button;
 import org.jsfml.window.VideoMode;
 import org.jsfml.window.Window;
-import org.jsfml.window.event.Event;
 
 /*  TODO LIST:
  * 2. Add a "Try again" button when you lose
@@ -26,7 +21,6 @@ public class Main {
     private State currentState;
     private VideoMode mode;
     private RenderWindow window;
-    private int level;
 
     public Main() {
         createObjects();

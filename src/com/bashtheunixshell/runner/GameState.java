@@ -11,10 +11,10 @@ public class GameState implements State {
     private Player          player;
     private Block           block;
     private Ground          ground;
-    private Background      sky, clouds1, clouds2, building1, building2, floor;
+    private Background      sky, clouds1, clouds2, building1, building2;
     private Dialog          pointsText, lostText;
     private float           velocityX;
-    private boolean         lost, clearedblock, keyPressed;
+    private boolean         lost;
     private int             points;
 
     // Initializes all objects when the game goes from another state to this one
@@ -27,7 +27,6 @@ public class GameState implements State {
         clouds2         = new Background("clouds", Main.WIDTH, 0);
         building1       = new Background("buildings", 0, 0);
         building2       = new Background("buildings", Main.WIDTH, 0);
-        floor           = new Background("floor", 0, Main.HEIGHT - 32);
         pointsText      = new Dialog("0", 0, 0, Color.BLACK);
         velocityX       = -3;
         points          = 0;

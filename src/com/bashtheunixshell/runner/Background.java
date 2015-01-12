@@ -1,11 +1,10 @@
 package com.bashtheunixshell.runner;
 
-import org.jsfml.graphics.RenderWindow;
-import org.jsfml.graphics.Sprite;
-import org.jsfml.graphics.Texture;
-
 import java.io.IOException;
 import java.nio.file.Paths;
+
+import org.jsfml.graphics.Sprite;
+import org.jsfml.graphics.Texture;
 
 public class Background extends Sprite {
 

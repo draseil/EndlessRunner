@@ -1,12 +1,11 @@
 package com.bashtheunixshell.runner;
 
-import org.jsfml.graphics.RenderWindow;
-import org.jsfml.graphics.Sprite;
-import org.jsfml.graphics.Texture;
-
 import java.io.IOException;
 import java.nio.file.Paths;
 import java.util.Random;
+
+import org.jsfml.graphics.Sprite;
+import org.jsfml.graphics.Texture;
 
 public class Block extends Sprite {
 

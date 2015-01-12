@@ -1,14 +1,13 @@
 package com.bashtheunixshell.runner;
 
-import org.jsfml.graphics.RenderWindow;
-import org.jsfml.graphics.Sprite;
-import org.jsfml.graphics.Texture;
-import org.jsfml.window.Keyboard;
-import org.jsfml.window.Keyboard.Key;
-import org.jsfml.system.Vector2f;
-
 import java.io.IOException;
 import java.nio.file.Paths;
+
+import org.jsfml.graphics.Sprite;
+import org.jsfml.graphics.Texture;
+import org.jsfml.system.Vector2f;
+import org.jsfml.window.Keyboard;
+import org.jsfml.window.Keyboard.Key;
 
 public class SelectBox extends Sprite {
 

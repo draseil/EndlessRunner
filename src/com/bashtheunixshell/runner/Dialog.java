@@ -1,12 +1,11 @@
 package com.bashtheunixshell.runner;
 
-import org.jsfml.graphics.Color;
-import org.jsfml.graphics.Font;
-import org.jsfml.graphics.RenderWindow;
-import org.jsfml.graphics.Text;
-
 import java.io.IOException;
 import java.nio.file.Paths;
+
+import org.jsfml.graphics.Color;
+import org.jsfml.graphics.Font;
+import org.jsfml.graphics.Text;
 
 public class Dialog extends Text {
 
