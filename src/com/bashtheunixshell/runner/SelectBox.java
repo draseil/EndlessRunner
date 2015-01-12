@@ -15,6 +15,7 @@ public class SelectBox extends Sprite {
     private Texture texture;
     private boolean keyIsPressed = false;;
 
+    // Sets an image to the class
     public SelectBox(Vector2f position) {
         texture = new Texture();
 
@@ -29,6 +30,7 @@ public class SelectBox extends Sprite {
         setPosition(position);
     }
 
+    // Moves on key press
     public void move(Dialog text1, Dialog text2, Dialog text3) {
         if (Keyboard.isKeyPressed(Key.DOWN) || Keyboard.isKeyPressed(Key.UP) || Keyboard.isKeyPressed(Key.RETURN)) {
             if (Keyboard.isKeyPressed(Key.DOWN)) {
@@ -71,9 +73,5 @@ public class SelectBox extends Sprite {
         } else {
             keyIsPressed = false;
         }
-    }
-
-    public void draw(RenderWindow window) {
-        window.draw(this);
     }
 }

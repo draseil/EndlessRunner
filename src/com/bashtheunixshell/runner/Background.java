@@ -11,6 +11,7 @@ public class Background extends Sprite {
 
     private Texture texture;
 
+    // Gives it an image based on the parameters
     public Background(String filename, int x, int y) {
         texture = new Texture();
 
@@ -24,7 +25,8 @@ public class Background extends Sprite {
         setPosition(x, y);
     }
 
-    public void animate(RenderWindow window, float speed, int windowWidth) {
+    // Animates the background so that it scrolls
+    public void animate(float speed, int windowWidth) {
         move(speed, 0);
 
         if (getPosition().x <= -windowWidth) {
@@ -32,11 +34,5 @@ public class Background extends Sprite {
         } else if (getPosition().x <= -windowWidth) {
             setPosition(windowWidth, 0);
         }
-
-        window.draw(this);
-    }
-
-    public void draw(RenderWindow window) {
-        window.draw(this);
     }
 }

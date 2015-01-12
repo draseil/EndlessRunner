@@ -15,9 +15,12 @@ import org.jsfml.window.event.Event;
 
 public class Main {
 
+    // Variables for the window
     public static final int WIDTH = 800, HEIGHT = 360;
     public static final String TITLE = "Endless Runner";
 
+    // Basically created just for state switching
+    // I don't know if it's the right way to do it
     public static Main mainGame;
 
     private State currentState;
@@ -28,12 +31,14 @@ public class Main {
     public Main() {
         createObjects();
 
+        // Game loop
         while (window.isOpen()) {
             currentState.update(window);
             currentState.draw(window);
         }
     }
 
+    // Initializes every object
     public void createObjects() {
         mainGame = this;
         mode            = new VideoMode(WIDTH, HEIGHT);
@@ -45,6 +50,7 @@ public class Main {
         window.setFramerateLimit(60);
     }
 
+    // These next few methods allow the changing of states
     public void startGame() {
         currentState.exit();
         currentState = new GameState();

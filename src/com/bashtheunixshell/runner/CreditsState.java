@@ -11,20 +11,24 @@ public class CreditsState implements State {
 
     private Dialog mainText;
 
+    // Gets called whenever the state goes from another one to this one
     public void enter() {
         mainText = new Dialog(CREDITS_TEXT, Main.WIDTH / 2, Main.HEIGHT / 2);
     }
 
+    // Does the opposite of enter()
     public void exit() {}
 
+    // Draws all objects to the RenderWindow
     public void draw(RenderWindow window) {
         window.clear();
 
-        mainText.draw(window);
+        window.draw(mainText);
 
         window.display();
     }
 
+    // Listens for key presses
     public void update(RenderWindow window) {
         for (Event event : window.pollEvents()) {
             if (event.type == Event.Type.CLOSED || Keyboard.isKeyPressed(Key.ESCAPE)) {

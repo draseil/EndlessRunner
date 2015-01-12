@@ -10,6 +10,7 @@ import java.util.Random;
 
 public class Block extends Sprite {
 
+    // Gives it an image and location to be drawn
     public Block(int x, int y) {
         Texture texture = new Texture();
 
@@ -23,6 +24,7 @@ public class Block extends Sprite {
         setPosition(x, y);
     }
 
+    // Moves it to a random place as soon as it moves past the edge
     public void checkBoundaries(int width, int height) {
         if (X1() <= -100) {
             Random number = new Random();
@@ -30,10 +32,8 @@ public class Block extends Sprite {
             setPosition(width + position, height - 64);
         }
     }
-
-    public void draw(RenderWindow window) {
-        window.draw(this);
-    }
+    
+    // Returns its geometry
 
     public float X1() {
         return getGlobalBounds().left;

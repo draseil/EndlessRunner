@@ -16,6 +16,7 @@ public class Player extends Sprite {
     private boolean hasJumped = false;
     private int level = 1;
 
+    // Sets the image to this class
     public Player(int x, int y) {
         texture = new Texture();
         gravity = 0;
@@ -30,6 +31,7 @@ public class Player extends Sprite {
         setPosition(x, y);
     }
 
+    // Moves the player with key input
     public void move(Ground ground) {
         gravity++;
         move(0, gravity);
@@ -54,6 +56,7 @@ public class Player extends Sprite {
         }
     }
 
+    // Stops the player whenever it touches one of the side edges
     public void checkBoundaries(int width, int height) {
         if (X1() <= 0) {
             setPosition(0, Y1());
@@ -62,6 +65,8 @@ public class Player extends Sprite {
         }
     }
 
+    // Adds a point whenever the player jumps over a block
+    // Take note of this flag
     public int addPoints(int points, Block block) {
         if (X1() > block.X1() && X1() < block.X2()) {
             if (!hasJumped) {
@@ -75,6 +80,7 @@ public class Player extends Sprite {
         return points;
     }
 
+    // Changes the game's level based on the current score
     public void changeLevel(int points) {
         if (points == 10) {
             level = 2;
@@ -83,17 +89,17 @@ public class Player extends Sprite {
         }
     }
 
+    // Returns whether the player is on the ground or not
     public boolean onTheGround(Ground ground) {
         return (Y2() > ground.Y1());
     }
 
+    // Checks the collision with a block
     public boolean isColliding(Block block) {
         return (X1() < block.X2() && X2() > block.X1() && Y1() < block.Y2() && Y2() > block.Y1());
     }
 
-    public void draw(RenderWindow window) {
-        window.draw(this);
-    }
+    // These next few methods return the geometry of the player
 
     public float X1() {
         return getGlobalBounds().left;

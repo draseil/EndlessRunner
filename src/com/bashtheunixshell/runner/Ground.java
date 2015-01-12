@@ -15,27 +15,16 @@ public class Ground extends RectangleShape {
     private Texture texture;
     private Vector2f size;
 
+    // Sets a size and position
     public Ground(int x, int y) {
         texture = new Texture();
         size = new Vector2f(800, 32);
 
-/*
-        try {
-            texture.loadFromFile(Paths.get("res/ground.png"));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-        setTexture(texture);*/
-
         setSize(size);
         setPosition(x, y);
-//        setColor(Color.BLACK);
     }
 
-    public void draw(RenderWindow window) {
-        window.draw(this);
-    }
+    // Returns objects geometry
 
     public float X1() {
         return getGlobalBounds().left;

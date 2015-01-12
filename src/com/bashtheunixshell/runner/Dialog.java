@@ -12,6 +12,7 @@ public class Dialog extends Text {
 
     private Font font;
 
+    // Sets a font, size, text and position
     public Dialog(String text, int x, int y) {
         font = new Font();
 
@@ -28,6 +29,7 @@ public class Dialog extends Text {
         setPosition(x, y);
     }
 
+    // Sets a font, size, text, position and colour
     public Dialog(String text, int x, int y, Color color) {
         font = new Font();
 
@@ -45,9 +47,7 @@ public class Dialog extends Text {
         setColor(color);
     }
 
-    public void draw(RenderWindow window) {
-        window.draw(this);
-    }
+    // Returns its geometry
 
     public int width() {
         return (int) getGlobalBounds().width;

@@ -17,6 +17,7 @@ public class GameState implements State {
     private boolean         lost, clearedblock, keyPressed;
     private int             points;
 
+    // Initializes all objects when the game goes from another state to this one
     public void enter() {
         player          = new Player(32, Main.HEIGHT - 64);
         block           = new Block(Main.WIDTH, Main.HEIGHT - 64);
@@ -28,37 +29,38 @@ public class GameState implements State {
         building2       = new Background("buildings", Main.WIDTH, 0);
         floor           = new Background("floor", 0, Main.HEIGHT - 32);
         pointsText      = new Dialog("0", 0, 0, Color.BLACK);
-        lostText        = new Dialog("     You lost\nPress <backspace>", Main.WIDTH / 2, Main.HEIGHT / 2, Color.BLACK);
         velocityX       = -3;
         points          = 0;
 
         pointsText.move(pointsText.width() / 2 + 5, pointsText.height() / 2 + 5);
     }
 
+    // Gets called when the game goes from this state to another
     public void exit() {}
 
+    // Draws all objects and animates the background
     public void draw(RenderWindow window) {
         window.clear();
 
-        sky.draw(window);
-        clouds1.draw(window);
-        clouds1.animate(window, velocityX / 3, Main.WIDTH);
-        clouds2.animate(window, velocityX / 3, Main.WIDTH);
-        building1.animate(window, velocityX / 3 * 2, Main.WIDTH);
-        building2.animate(window, velocityX / 3 * 2, Main.WIDTH);
-        ground.draw(window);
-        block.draw(window);
-        player.draw(window);
+        window.draw(sky);
+        window.draw(clouds1);
+        window.draw(clouds2);
+        window.draw(building1);
+        window.draw(building2);
+        window.draw(ground);
+        window.draw(block);
+        window.draw(player);
 
-        pointsText.draw(window);
+        window.draw(pointsText);
         if (lost) {
-            lostText.draw(window);
+            lostText = new Dialog("     You lost\nYour score was: " + points + "\nPress <backspace>", Main.WIDTH / 2, Main.HEIGHT / 2, Color.BLACK);
+            window.draw(lostText);
         }
-        //System.out.println(points);
 
         window.display();
     }
 
+    // Checks for losing, collision and updates the speed of movement
     public void update(RenderWindow window) {
         for (Event event : window.pollEvents()) {
             if (event.type == Event.Type.CLOSED || Keyboard.isKeyPressed(Key.ESCAPE)) {
@@ -71,6 +73,12 @@ public class GameState implements State {
         }
 
         velocityX -= 0.001;
+
+        clouds1.animate(velocityX / 3, Main.WIDTH);
+        clouds2.animate(velocityX / 3, Main.WIDTH);
+        building1.animate(velocityX / 3 * 2, Main.WIDTH);
+        building2.animate(velocityX / 3 * 2, Main.WIDTH);
+
         block.move(velocityX, 0);
         block.checkBoundaries(Main.WIDTH, Main.HEIGHT);
         player.move(ground);
