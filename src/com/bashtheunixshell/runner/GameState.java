@@ -52,7 +52,10 @@ public class GameState implements State {
 
         window.draw(pointsText);
         if (lost) {
-            lostText = new Dialog("     You lost\nYour score was: " + points + "\nPress <backspace>", Main.WIDTH / 2, Main.HEIGHT / 2, Color.BLACK);
+            lostText = new Dialog("                   You lost\n" +
+                                  "              Your score was: " + points + "\n" +
+                                  "Press <backspace> to go to the main menu\n" +
+                                  "      Press <Return> to restart", Main.WIDTH / 2, Main.HEIGHT / 2, Color.BLACK);
             window.draw(lostText);
         }
 
@@ -91,6 +94,12 @@ public class GameState implements State {
 
         if (player.isColliding(block)) {
             lost = true;
+
+            if (Keyboard.isKeyPressed(Key.RETURN)) {
+                lost = false;
+                exit();
+                enter();
+            }
         }
 
         if (lost) {
